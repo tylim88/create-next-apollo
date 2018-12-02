@@ -1,1 +1,1 @@
-This project was bootstrapped with [Create Example App](https://github.com/user/create-example-app).
+This project was bootstrapped with [create-next-apollo](https://github.com/user/create-next-apollo).
