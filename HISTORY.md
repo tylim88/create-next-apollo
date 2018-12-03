@@ -1,3 +1,7 @@
+# 1.2.0
+
+- now complete with SSR example
+
 # 1.1.2
 
 - fix cli not working

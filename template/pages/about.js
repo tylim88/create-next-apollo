@@ -3,15 +3,14 @@ import Link from 'next/link'
 import { dataContainer } from '../src/utils/unstated'
 import { Subscribe } from 'unstated'
 import ExchangeRateList from '../src/components/ExchangeRateList'
-const about = (props) => {
-  console.log(props)
+const about = () => {
   return (
     <Subscribe to={[dataContainer]}>
       {(exchangeRate) => {
         return (
           <Fragment>
             <Link href='./index'>
-              <button>to page index</button>
+              <button>go to Index</button>
             </Link>
             <ExchangeRateList data={exchangeRate.getData()} />
           </Fragment>
