@@ -1,3 +1,7 @@
+# 1.2.1
+
+- add github link
+
 # 1.2.0
 
 - now complete with SSR example

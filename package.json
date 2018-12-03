@@ -1,15 +1,15 @@
 {
   "name": "create-next-apollo",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "create-next-apollo",
   "author": "",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/tylim88/create-next-apollo"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/tylim88/create-next-apollo/issues"
   },
   "keywords": [
     "create",
@@ -19,7 +19,7 @@
     "Apollo",
     "boilerplate",
     "Unstated",
-    "SSR"
+    "Server Side Rendering"
   ],
   "bin": {
     "create-next-apollo": "./cli.js"
