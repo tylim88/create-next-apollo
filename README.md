@@ -1,6 +1,15 @@
 # Create-Next-Apollo
 
-under construction
+```
+npm i -g create-next-apollo
+create-next-apollo myAppName
+
+or
+
+npx create-next-apollo myAppName
+```
+
+it is ready to use, it comes with unstated and the example show you how to share state across pages
 
 ## Misc
 
