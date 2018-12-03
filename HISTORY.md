@@ -1,3 +1,7 @@
+# 1.2.2
+
+- housekeeping readme
+
 # 1.2.1
 
 - add github link

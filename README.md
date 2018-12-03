@@ -17,16 +17,16 @@ it is ready to use, it comes with simple example that show you:
 
 What can you expect when you npm run dev?
 
-![](./img/1.png)
+![](./img/1.png)  
 The data is loaded which mean SSR is working.
 
-![](./img/2.png)
+![](./img/2.png)  
 You should see nothing in about page because you haven't update the state in container.
 
-![](./img/3.png)
+![](./img/3.png)  
 Now go back and update the state in index page.
 
-![](./img/4.png)
+![](./img/4.png)  
 And now you should see the same data in About page.
 
 ## Acknowledgement
