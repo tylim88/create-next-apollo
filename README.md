@@ -11,7 +11,7 @@ npx create-next-apollo myAppName
 
 ## Instruction
 
-It is ready to use, it comes with simple example that show you:
+It is ready to use, it comes with simple example that shows you:
 
 1. How to use Unstated to share state across pages.
 2. How to Apollo in Next
@@ -20,10 +20,10 @@ It is ready to use, it comes with simple example that show you:
 What can you expect when you npm run dev?
 
 ![](./img/1.png)  
-The data is loaded which mean SSR is working.
+The data is loaded together with the page which mean SSR is working.
 
 ![](./img/2.png)  
-You should see nothing in about page because you haven't update the state in container.
+You should see nothing in about page because you haven't updated the state in container.
 
 ![](./img/3.png)  
 Now go back and update the state in index page.
@@ -45,4 +45,4 @@ Greatly Inspired by [Next Apollo Example](https://github.com/zeit/next.js/tree/c
 
 Great library, deserve more attention [Unstated](https://github.com/jamiebuilds/unstated)
 
-This project was bootstrapped with [Create NPM Create](https://github.com/tylim88/create-npm-create).
+This project was bootstrapped with [Create NPM Create](https://www.npmjs.com/package/create-npm-create).
