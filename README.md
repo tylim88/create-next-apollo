@@ -9,6 +9,14 @@ or
 npx create-next-apollo myAppName
 ```
 
+## Troubleshooting
+
+**ENOENT error when _npm i -g create-next-apollo_ in desktop folder**
+cause: unknown  
+remedy: there is two workaround, use **npx create-next-apollo myAppName instead** or create a new folder and **run npm i -g create-next-apollo**
+
+## Instruction
+
 it is ready to use, it comes with simple example that show you:
 
 1. How to Unstated to share state across pages.
