@@ -9,12 +9,6 @@ or
 npx create-next-apollo myAppName
 ```
 
-## Troubleshooting
-
-**ENOENT error when _npm i -g create-next-apollo_ in desktop folder**  
-cause: unknown  
-remedy: there is three workaround, **download and install new version of npm** or **npx create-next-apollo myAppName** or create a new folder and **run npm i -g create-next-apollo** in the folder
-
 ## Instruction
 
 It is ready to use, it comes with simple example that show you:
@@ -36,6 +30,12 @@ Now go back and update the state in index page.
 
 ![](./img/4.png)  
 And now you should see the same data in About page.
+
+## Troubleshooting
+
+**ENOENT error when _npm i -g create-next-apollo_ in desktop folder**  
+cause: unknown  
+remedy: there is three workaround, **download and install new version of npm** or **npx create-next-apollo myAppName** or create a new folder and **run npm i -g create-next-apollo** in the folder
 
 ## Acknowledgement
 
