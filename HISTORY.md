@@ -1,3 +1,7 @@
+# v1.2.4
+
+- update troubleshooting
+
 # v1.2.3
 
 - update build tool .gitignore to ignore template's node_module and .next folders
