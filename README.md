@@ -16,6 +16,13 @@ It is ready to use, it comes with simple example that shows you:
 1. How to use Unstated to share state across pages.
 2. How to Apollo in Next
 3. How to SSR Apollo in Next
+4. How to environment variable
+
+Out of the box:
+
+1. CSS import support
+2. Image import support
+3. Sass import support
 
 What can you expect when you npm run dev?
 

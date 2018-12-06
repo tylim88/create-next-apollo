@@ -1,3 +1,8 @@
+# v1.3.0
+
+- add image support
+- add environment variable
+
 # v1.2.7
 
 - housekeeping readme
