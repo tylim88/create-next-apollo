@@ -5,12 +5,12 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "next": "env-cmd ./.config/dev.env next",
+    "dev": "env-cmd ./.config/dev.env next",
     "start": "env-cmd ./.config/dev.env next start",
-    "build": "next build",
-    "export": "next export",
-    "prod-next": "env-cmd ./.config/prod.env next",
+    "prod": "env-cmd ./.config/prod.env next",
     "prod-start": "env-cmd ./.config/prod.env next start",
+    "export": "next export",
+    "build": "next build",
     "jest": "",
     "jest-ci": ""
   },

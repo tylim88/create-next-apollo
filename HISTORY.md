@@ -1,3 +1,7 @@
+# v1.3.2
+
+- small changes to npm script
+
 # v1.3.1
 
 - small changes to npm script
