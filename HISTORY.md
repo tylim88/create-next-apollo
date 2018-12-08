@@ -1,5 +1,9 @@
 # v1.3.2
 
+- reduce complexity of npm script
+
+# v1.3.2
+
 - small changes to npm script
 
 # v1.3.1

@@ -6,11 +6,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "env-cmd ./.config/dev.env next",
-    "start": "env-cmd ./.config/dev.env next start",
-    "prod": "env-cmd ./.config/prod.env next",
-    "prod-start": "env-cmd ./.config/prod.env next start",
-    "export": "next export",
+    "start": "env-cmd ./.config/prod.env next start",
     "build": "next build",
+    "export": "next export",
     "jest": "",
     "jest-ci": ""
   },
