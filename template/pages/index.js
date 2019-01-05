@@ -31,9 +31,9 @@ const Index = () => {
               if (error)
                 return (
                   <p>
-                    Error :(, please open and initialize
+                    {`Error :(, please open and initialize
                     https://48p1r2roz4.sse.codesandbox.io/ and then refresh this
-                    page
+                    page`}
                   </p>
                 )
 
