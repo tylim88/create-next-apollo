@@ -7,7 +7,7 @@ let apolloClient = null
 const getClient = (initialState) =>
   new ApolloClient({
     link: new HttpLink({
-      uri: 'https://w5xlvm3vzz.lp.gql.zone/graphql', //Server URL (must be absolute)
+      uri: 'https://48p1r2roz4.sse.codesandbox.io', //Server URL (must be absolute)
       credentials: 'same-origin', //Additional fetch() options like `credential` or `headers`
     }),
     ssrMode: !process.browser, // Disables forceFetch on the server (so queries are only run once)
