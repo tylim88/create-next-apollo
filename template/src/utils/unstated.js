@@ -1,11 +1,15 @@
 import { Container } from 'unstated'
 
-class dataContainer extends Container {
+class stateContainer extends Container {
   state = {}
-  insertData = (data) => {
-    this.setState(data)
+  initUserState = (state) => {
+    this.state = state
   }
-  getData = () => this.state
+  insertData = (state) => {
+    this.setState(state)
+  }
+  getState = () => this.state
 }
+const stateStore = new stateContainer()
 
-export { dataContainer }
+export { stateContainer, stateStore }

@@ -2,6 +2,7 @@ import { Component } from 'react'
 import { initApollo } from './initApollo'
 import Head from 'next/head'
 import { getDataFromTree } from 'react-apollo'
+import { stateStore } from './unstated'
 
 export default (App) => {
   return class Apollo extends Component {
@@ -14,14 +15,16 @@ export default (App) => {
       if (App.getInitialProps) {
         appProps = await App.getInitialProps(ctx)
       }
-      //cant find documentation of this code, but seem to be standard
-      //marked as to ask in forum #1
-
+      console.log(stateStore)
       // run all graphql queries in the component tree
       // and extract the resulting data
 
       const apolloClient = initApollo()
       if (!process.browser) {
+        stateStore.initUserState({
+          text:
+            'this text is state from server and will not disappear if you come back from about page',
+        })
         try {
           // run all graphql queries
           await getDataFromTree(
@@ -30,6 +33,7 @@ export default (App) => {
               Component={Component}
               router={router}
               apolloClient={apolloClient}
+              stateStore={stateStore}
             />
           )
         } catch (error) {
@@ -50,14 +54,27 @@ export default (App) => {
       return {
         ...appProps,
         apolloState,
+        state: stateStore.getState(),
       }
     }
     constructor(props) {
       super(props)
       this.apolloClient = initApollo(props.apolloState)
+      // hydrate state in client
+      // serverInitialState value preserve from server to client before user navigate another next/link
+      // use this chance to hydrate the state
+      if (process.browser) {
+        stateStore.initUserState(props.state)
+      }
     }
     render() {
-      return <App {...this.props} apolloClient={this.apolloClient} />
+      return (
+        <App
+          {...this.props}
+          apolloClient={this.apolloClient}
+          stateStore={stateStore}
+        />
+      )
     }
   }
 }
