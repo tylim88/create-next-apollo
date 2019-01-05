@@ -1,3 +1,8 @@
+# v2.0
+
+- add example to preserve state from server
+- change ineffective uri
+
 # v1.3.2
 
 - reduce complexity of npm script
