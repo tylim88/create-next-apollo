@@ -28,7 +28,14 @@ const Index = () => {
           <Query notifyOnNetworkStatusChange query={getUsdExchangeRate}>
             {({ loading, error, data }) => {
               if (loading) return <p>Loading...</p>
-              if (error) return <p>Error :(</p>
+              if (error)
+                return (
+                  <p>
+                    Error :(, please open and initialize
+                    https://48p1r2roz4.sse.codesandbox.io/ and then refresh this
+                    page
+                  </p>
+                )
 
               return (
                 <ExchangeRateList data={data} exchangeRate={exchangeRate} />
