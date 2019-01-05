@@ -17,6 +17,7 @@ It is ready to use, it comes with simple example that shows you:
 2. How to Apollo in Next
 3. How to SSR Apollo in Next
 4. How to environment variable (inject with env-cmd and get it from next.config.js)
+5. How to preserve server state in client
 
 Out of the box:
 
