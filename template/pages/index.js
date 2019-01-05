@@ -4,12 +4,12 @@ import { Fragment } from 'react'
 import { Query } from 'react-apollo'
 import { getUsdExchangeRate } from '../src/utils/operation'
 import { Subscribe } from 'unstated'
-import { dataContainer } from '../src/utils/unstated'
+import { stateContainer } from '../src/utils/unstated'
 import ExchangeRateList from '../src/components/ExchangeRateList'
 
 const Index = () => {
   return (
-    <Subscribe to={[dataContainer]}>
+    <Subscribe to={[stateContainer]}>
       {(exchangeRate) => (
         <Fragment>
           <Head>
@@ -23,6 +23,7 @@ const Index = () => {
           <Link href='about'>
             <button>go to About</button>
           </Link>
+          <h2>{exchangeRate.getState().text}</h2>
           <h1>USD To</h1>
           <Query notifyOnNetworkStatusChange query={getUsdExchangeRate}>
             {({ loading, error, data }) => {

@@ -6,13 +6,16 @@ const ExchangeRateList = (props) => {
   return (
     <Fragment>
       {(exchangeRate && (
-        <button
-          onClick={() => {
-            exchangeRate.insertData(data)
-          }}
-        >
-          Update State!
-        </button>
+        <>
+          <p>before you update state go and check about page first</p>
+          <button
+            onClick={() => {
+              exchangeRate.insertData(data)
+            }}
+          >
+            Update State!
+          </button>
+        </>
       )) || <h1>USD To</h1>}
 
       {(data.rates &&

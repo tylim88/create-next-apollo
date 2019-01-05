@@ -1,17 +1,15 @@
 import App, { Container } from 'next/app'
 import { ApolloProvider } from 'react-apollo'
 import { Provider } from 'unstated'
-import { dataContainer } from '../src/utils/unstated'
-import withApollo from '../src/utils/withApollo'
+import withApolloUnstated from '../src/utils/withApolloUnstated'
 
-let dataStore = new dataContainer()
 class MyApp extends App {
   render() {
-    const { Component, pageProps, apolloClient } = this.props
+    const { Component, pageProps, apolloClient, stateStore } = this.props
     return (
       <Container>
         <ApolloProvider client={apolloClient}>
-          <Provider inject={[dataStore]}>
+          <Provider inject={[stateStore]}>
             <Component {...pageProps} />
           </Provider>
         </ApolloProvider>
@@ -20,4 +18,4 @@ class MyApp extends App {
   }
 }
 
-export default withApollo(MyApp)
+export default withApolloUnstated(MyApp)
