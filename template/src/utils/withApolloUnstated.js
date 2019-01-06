@@ -15,7 +15,6 @@ export default (App) => {
       if (App.getInitialProps) {
         appProps = await App.getInitialProps(ctx)
       }
-      console.log(stateStore)
       // run all graphql queries in the component tree
       // and extract the resulting data
 
