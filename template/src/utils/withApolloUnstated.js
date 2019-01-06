@@ -20,6 +20,9 @@ export default (App) => {
 
       const apolloClient = initApollo()
       if (!process.browser) {
+        // reset server state for each request
+        stateStore.resetState()
+        // process server state
         stateStore.initUserState({
           text:
             'this text is state from server and will not disappear if you come back from about page',
@@ -49,11 +52,17 @@ export default (App) => {
 
       // Extract query data from Apollo store
       const apolloState = apolloClient.cache.extract()
-
-      return {
-        ...appProps,
-        apolloState,
-        state: stateStore.getState(),
+      if (!process.browser) {
+        return {
+          ...appProps,
+          apolloState,
+          state: stateStore.state,
+        }
+      } else {
+        return {
+          ...appProps,
+          apolloState,
+        }
       }
     }
     constructor(props) {

@@ -23,18 +23,24 @@ const Index = () => {
           <Link href='about'>
             <button>go to About</button>
           </Link>
-          <h2>{exchangeRate.getState().text}</h2>
+          <h2>{exchangeRate.state.text}</h2>
           <h1>USD To</h1>
           <Query notifyOnNetworkStatusChange query={getUsdExchangeRate}>
             {({ loading, error, data }) => {
               if (loading) return <p>Loading...</p>
               if (error)
                 return (
-                  <p>
-                    {`Error :(, please open and initialize
-                    https://48p1r2roz4.sse.codesandbox.io/ and then refresh this
-                    page`}
-                  </p>
+                  <>
+                    {`Error :(, please open and initialize this `}
+                    <a
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      href='https://48p1r2roz4.sse.codesandbox.io/'
+                    >
+                      GraphQL Playground Sandbox
+                    </a>
+                    {` and then refresh this page`}
+                  </>
                 )
 
               return (

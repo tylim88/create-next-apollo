@@ -12,7 +12,7 @@ const about = () => {
             <Link href='./index'>
               <button>go to Index</button>
             </Link>
-            <ExchangeRateList data={exchangeRate.getState()} />
+            <ExchangeRateList data={exchangeRate.state} />
           </Fragment>
         )
       }}

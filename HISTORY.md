@@ -1,3 +1,9 @@
+# 2.1.0
+
+- remove getState method
+- no longer return state on client side in getInitialprops
+- reset server state on each request
+
 # v2.0.1
 
 - remove console.log
