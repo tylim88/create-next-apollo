@@ -1,4 +1,8 @@
-# v2.0
+# v2.0.1
+
+- remove console.log
+
+# v2.0.0
 
 - add example to preserve state from server
 - change ineffective uri
