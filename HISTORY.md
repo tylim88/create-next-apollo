@@ -1,3 +1,7 @@
+# 2.1.1
+
+- small update in readme
+
 # 2.1.0
 
 - remove getState method

@@ -1,6 +1,6 @@
 ## Acknowledgement
 
-Greatly Inspired by [Next Apollo Example](https://github.com/zeit/next.js/tree/canary/examples/with-apollo)
+Greatly Inspired by [Next Apollo Example](https://github.com/zeit/next.js/tree/canary/examples/with-apollo) and [Next Unstated Example](https://github.com/zeit/next.js/tree/canary/examples/with-unstated)
 
 ## MISC
 

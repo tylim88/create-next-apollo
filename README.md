@@ -14,10 +14,9 @@ npx create-next-apollo myAppName
 It is ready to use, it comes with simple example that shows you:
 
 1. How to use Unstated to share state across pages.
-2. How to Apollo in Next
-3. How to SSR Apollo in Next
-4. How to environment variable (inject with env-cmd and get it from next.config.js)
-5. How to preserve server state in client
+2. How to SSR Apollo in Next
+3. How to environment variable (inject with env-cmd and get it from next.config.js)
+4. How to preserve Unstated from server to client
 
 Out of the box:
 
